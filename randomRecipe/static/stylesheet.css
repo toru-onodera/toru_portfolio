@@ -1,0 +1,41 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #74c59e;
+    color: #402737;
+}
+
+
+header {
+    display: block;
+    border-radius: 10px;
+    background-color: #fff;
+    margin:  0 auto;
+    width: 500px; 
+    height: auto;
+}
+
+.data {    
+    display: block;
+    border-radius: 10px;
+    background-color: #fff;
+    margin:  0 auto;
+    width: 800px; 
+    height: auto;
+}
+
+/* ボタン */
+.btn-flat-border {
+    display: inline-block;
+    padding: 1em 2em;
+    text-decoration: none;
+    color: #67c5ff;
+    border: solid 2px #67c5ff;
+    border-radius: 3px;
+    transition: .4s;
+}
+
+.btn-flat-border:hover {
+    background: #67c5ff;
+    color: white;
+}

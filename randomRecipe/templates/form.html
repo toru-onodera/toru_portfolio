@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='stylesheet.css')}}">
+
+    <title>今日の豚肉料理</title>
+</head>
+<body>
+    <header>
+        <h1>今日の料理</h1>
+    </header>
+<br>
+    
+    <form action="{{url_for('summon')}}" method='POST'>
+        <h3>押してください</h3>
+        <h4>ランダムでレシピが表示されます。</h4>
+        <button type="submit" class="btn-flat-border">開始</button>
+    </form>
+
+</body>
+</html>
