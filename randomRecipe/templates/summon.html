@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='stylesheet.css')}}">
+    <title>今日の料理</title>
+</head>
+<body>
+
+    <header>
+        <h1>今日の料理は、{{data.recipeTitle}}</h1>
+    </header>
+    <br>
+        <div class="data">
+            <table>
+                <tbody>
+                {% for key,value in data.items() %}
+                <tr>
+                    <td><h3>{{ key }}</h3></td>
+                    <td>{{ value }}</td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+
+    <h1>です</h1>
+
+
+
+    <form action= "{{url_for('form')}}"  method='GET'>
+        <button type="submit" class="btn-flat-border">戻る</button>
+    </form>
+
+</body>
+</html>
