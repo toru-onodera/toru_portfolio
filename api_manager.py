@@ -22,7 +22,8 @@ def get_dish():
     res = requests.get(REQUESTS_URL, item_parameters)
     result = res.json()
     
-    return result['result'][random.randint(0,3)]
+    return result['result','default value'][random.randint(0,3)]
+
 
 
 
